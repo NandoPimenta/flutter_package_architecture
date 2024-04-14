@@ -1,4 +1,4 @@
 
-abstract class Datasource<U>{
-  Future<Map<String,dynamic>> call({U data});
+abstract class Datasource<BaseModel,BaseEntityParams>{
+  Future<BaseModel> call({required BaseEntityParams data});
 }
