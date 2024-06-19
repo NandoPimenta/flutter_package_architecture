@@ -1,4 +1,3 @@
-
-abstract class Datasource<BaseModel,BaseEntityParams>{
-  Future<BaseModel> call({required BaseEntityParams data});
+abstract class Datasource<M, P> {
+  Future<M> call({required P data});
 }
